@@ -10,7 +10,57 @@
   <!--Only for demo purpose - no need to add.-->
   <link rel="stylesheet" href="css/demo.css">
 
-</head>
+<style type="text/css">@font-face{
+    font-family: 'bnazanin';
+    src:'./../../fonts/bnazanin.ttf';
+}
+
+.dideo-tooltip {
+    position: relative;
+    display: inline-block;
+    font-family: 'bnazanin';
+    font-size: 0;
+    padding: 3px 5px;
+}
+
+.dideo-tooltip .tooltiptext {
+    visibility: hidden;
+    font-family: 'bnazanin';
+    width: 120px;
+    font-size: 13px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 110%;
+}
+.dideo-img{
+    width: 18px;
+    height: 18px;
+    margin-bottom: -3px;
+    filter: drop-shadow(0px 0px 2px #adadad);
+    webkit:filter: drop-shadow(0px 0px 2px #05edf5);
+}
+.dideo-tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.dideo-tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.srg{
+    min-width: 750px;
+}</style></head>
 <body>
   
 
@@ -47,11 +97,11 @@ C131.967,94.755,132.296,93.271,131.583,92.152z"></path>
   </h3>
 </div>
 <div id="lower-side">
-  <p id="message">
-    Congratulations, your account has been successfully created.
-  </p>
-  <a href="satt-token.github.io/main/" id="contBtn">Continue</a>
-</div>
+  <p id="message">You have successfully participated in Airdrop. After the registration period ends, tokens will be sent to the winning participants</p>
+  <p id="message">__________________________</p>
+<p id="message">Also, you can participate in the Satt token pre-sale at a much lower price and earn profit.<br> Or earn weekly profit by buying Satt token and connecting to liquidity pool</p><a href="/main/" id="contBtn">Back to Home</a><br>
+<br><a href="/presale/" id="contBtn">Join PreSale<br></a>
+<br><a href="/presale/" id="contBtn">Stake and Earn</a></div>
 </div>
 <!-- partial -->
       
